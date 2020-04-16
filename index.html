@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dilivery Food - дооставка еды на дом</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
 </head>
 <body>
   <div class="container">
     <!-- Шапка сайта -->
     <header class="header">
       <!-- Логотип -->
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo animated bounce">
         <img src="img/logo.svg" alt="Logo">
       </a>
 
@@ -40,8 +43,9 @@
     <div class="container">
       <!-- блок промо -->
       <section class="promo">
-        <h1 class="promo-title">Онлайн-сервис <br>доставки еды на дом</h1>
-        <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+        <h1 class="promo-title wow fadeInLeft">Онлайн-сервис <br>доставки еды на дом</h1>
+        <p class="promo-text wow fadeInLeft">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+        <img src="img/pizza.png" alt="pizza" class="promo-img">
       </section>
       <!-- /блок промо -->
 
@@ -54,7 +58,7 @@
 
         <!-- блок ресторанов -->
         <div class="cards">
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
             <img class="card-image" src="img/pizza-image.jpg" alt="Пицца плюс">
             <div class="card-text">
               <div class="card-heading">
@@ -80,7 +84,7 @@
           </a>
           <!-- /.card -->
 
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
             <img class="card-image" src="img/tanuki-image.jpg" alt="Тануки">
             <div class="card-text">
               <div class="card-heading">
@@ -106,7 +110,7 @@
           </a>
           <!-- /.card -->
 
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
             <img class="card-image" src="img/FoodBand-image.jpg" alt="FoodBand">
             <div class="card-text">
               <div class="card-heading">
@@ -132,7 +136,7 @@
           </a>
           <!-- /.card -->
 
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
             <img class="card-image" src="img/greedy-pizza-image.jpg" alt="Жадина пицца">
             <div class="card-text">
               <div class="card-heading">
@@ -158,7 +162,7 @@
           </a>
           <!-- /.card -->
 
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
             <img class="card-image" src="img/food-point-image.jpg" alt="Точка еды">
             <div class="card-text">
               <div class="card-heading">
@@ -184,7 +188,7 @@
           </a>
           <!-- /.card -->
 
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
             <img class="card-image" src="img/PizzaBurger-image.jpg" alt="PizzaBurger">
             <div class="card-text">
               <div class="card-heading">
@@ -235,6 +239,13 @@
       </div>
     </div>
     <!-- /.container -->
+      <script>
+        new WOW().init();
+      </script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/main.js"></script>
+
+      
   </footer>
 </body>
 </html>
