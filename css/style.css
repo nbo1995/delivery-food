@@ -11,6 +11,10 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+a {
+  color: #000 !important;
+  text-decoration: none;
+}
 .header {
   display: flex;
   align-items: center;
@@ -72,10 +76,59 @@ body {
 /* блок промо */
 .promo {
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
-  background: #fff1b8 url(../img/pizza.png) no-repeat top -100px right -247px / 924px;
+  background: #fff1b8;
+  /* background: #fff1b8 url(../img/pizza.png) no-repeat top -100px right -247px / 924px; */
   border-radius: 10px;
   padding: 68px 70px;
   margin-bottom: 56px;
+  
+  position: relative;
+  overflow: hidden;
+}
+.promo-img {
+  position: absolute;
+  top: -100px;
+  right: -220px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+
+
+
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 20s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 .promo-title {
   font-size: normal;
